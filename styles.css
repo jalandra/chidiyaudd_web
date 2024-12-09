@@ -116,7 +116,7 @@ section img {
 }
 
 .youtube-video .play-button::before {
-  content: '';
+  content: 'Play';
   border-style: solid;
   border-width: 12px 0 12px 20px;
   border-color: transparent transparent transparent #fff;

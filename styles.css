@@ -79,9 +79,49 @@ section img {
   text-align: left;
 }
 
-.video-section video {
-  max-width: 100%;
+/* Video Section Styles */
+.video-section {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #5D87FF, #007BFF);
+  color: #fff;
+  text-align: center;
+}
+
+.youtube-video {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+  margin: 0 auto;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.youtube-video img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.youtube-video .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtube-video .play-button::before {
+  content: '';
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent #fff;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 footer {

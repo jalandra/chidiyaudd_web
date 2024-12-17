@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #333; /* Default text color */
   line-height: 1.6;
 }
 
@@ -17,6 +17,7 @@ header.hero {
   background: url('hero-bg.jpg') no-repeat center center/cover;
   text-align: center;
   padding: 100px 20px;
+  color: #fff; /* Ensure header text contrasts the background */
 }
 
 header.hero h1 {
@@ -41,11 +42,11 @@ header.hero .cta-secondary {
 }
 
 header.hero .cta {
-  background: #007BFF;
+  background: #007BFF; /* Primary button */
 }
 
 header.hero .cta-secondary {
-  background: #6C757D;
+  background: #6C757D; /* Secondary button */
 }
 
 section {
@@ -56,14 +57,14 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #007BFF; /* Highlight section headings */
 }
 
-section img {
-  max-width: 100%;
-  border-radius: 10px;
+section p {
+  color: #555; /* Adjust body text for better readability */
 }
 
-.features .feature-list {
+.features .feature-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -76,9 +77,13 @@ section img {
   padding: 20px;
   border-radius: 10px;
   text-align: left;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Video Section Styles */
+.features .feature h3 {
+  color: #007BFF; /* Feature title highlight */
+}
+
 .video-section {
   padding: 60px 20px;
   background: linear-gradient(120deg, #5D87FF, #007BFF);
@@ -123,13 +128,24 @@ section img {
   margin-left: 5px;
 }
 
+.testimonials blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+}
+
 footer {
   background: #333;
   text-align: center;
   padding: 20px;
+  color: #fff;
 }
 
 footer a {
-  color: #007BFF;
+  color: #00BFFF; /* Light blue footer links */
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

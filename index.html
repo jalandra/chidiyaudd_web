@@ -3,87 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chidiya Udd - Reflex Challenge Game</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>ManityaTech - Mobile Game Studio | Android Puzzle & Reflex Games Developer</title>
+  <meta name="description" content="ManityaTech Game Studio creates engaging mobile games for Android. Play PicSlide puzzle game and ChidiyaUdd reflex game. Free download on Google Play Store.">
+  <meta name="keywords" content="mobile games, Android games, puzzle games, reflex games, brain games, casual games, free games, Google Play Store, game developer, indie games, sliding puzzle, reaction time games, family games, mind games">
+  <meta name="author" content="ManityaTech Game Studio">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="ManityaTech - Mobile Game Studio | Android Puzzle & Reflex Games">
+  <meta property="og:description" content="Discover amazing mobile games: PicSlide puzzle game and ChidiyaUdd reflex game. Free Android games with beautiful graphics and engaging gameplay.">
+  <meta property="og:image" content="https://jalandra.github.io/chidiyaudd_web/chidiyaudd_poster.png">
+  <meta property="og:url" content="https://jalandra.github.io/chidiyaudd_web/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ManityaTech Game Studio">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ManityaTech - Mobile Game Studio">
+  <meta name="twitter:description" content="Play amazing Android games: PicSlide puzzle & ChidiyaUdd reflex game. Free download on Google Play Store.">
+  <meta name="twitter:image" content="https://jalandra.github.io/chidiyaudd_web/chidiyaudd_poster.png">
+  
+  <!-- Mobile App Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="ManityaTech Games">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://jalandra.github.io/chidiyaudd_web/">
+  
+  <!-- Fonts and Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ManityaTech Game Studio",
+    "url": "https://jalandra.github.io/chidiyaudd_web/",
+    "logo": "https://jalandra.github.io/chidiyaudd_web/chidiyaudd_poster.png",
+    "description": "Mobile game development studio creating engaging Android puzzle and reflex games",
+    "sameAs": [
+      "https://github.com/jalandra"
+    ],
+    "founder": {
+      "@type": "Organization",
+      "name": "ManityaTech Team"
+    },
+    "makesOffer": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "PicSlide - Puzzle Game",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "description": "Challenging sliding puzzle game with three difficulty levels",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ChidiyaUdd - Reflex Game",
+        "operatingSystem": "Android",
+        "applicationCategory": "GameApplication",
+        "description": "Fast-paced reflex testing game with multiplayer mode",
+        "url": "https://play.google.com/store/apps/details?id=com.chidiyaudd.chidiya_udd",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <h1>Chidiya Udd</h1>
-      <p class="subheadline">The Reflex Game Everyone's Talking About!</p>
+      <div class="nav-brand">
+        <h2>ManityaTech</h2>
+        <span>Game Studio</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" aria-label="Go to home section">Home</a></li>
+        <li><a href="#games" aria-label="View our mobile games">Games</a></li>
+        <li><a href="#about" aria-label="About ManityaTech studio">About</a></li>
+        <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero" role="banner">
+    <div class="container">
+      <h1>Welcome to ManityaTech Game Studio</h1>
+      <p class="subheadline">Creating Fun & Engaging Mobile Games for Android</p>
+      <p class="description">Discover two exciting free games that challenge your mind and reflexes! Download now from Google Play Store.</p>
       <div class="cta-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.chidiyaudd.chidiya_udd" class="cta">Play Now</a>
-        <a href="#video" class="cta-secondary">Watch Gameplay</a>
+        <a href="#games" class="cta" aria-label="Explore our mobile games">Explore Games</a>
+        <a href="#about" class="cta-secondary" aria-label="Learn about ManityaTech">About ManityaTech</a>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
+  <!-- Games Portfolio Section -->
+  <section id="games" class="games-portfolio" role="main">
     <div class="container">
-      <h2>Why You'll Love Chidiya Udd</h2>
-      <p class="description">Challenge your reflexes and have fun with this addictive game! Suitable for players of all ages, Chidiya Udd is designed to be engaging and easy to play.</p>
-      <img src="chidiyaudd_poster.png" alt="Gameplay Screenshot" class="about-image">
+      <h2>Our Mobile Game Portfolio</h2>
+      <div class="games-grid">
+        
+        <!-- PicSlide Game Card -->
+        <article class="game-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+          <div class="game-header">
+            <h3 itemprop="name">🧩 PicSlide</h3>
+            <span class="game-status">Latest Release</span>
+          </div>
+          <div class="game-preview">
+            <div class="game-icon picslide-icon" aria-label="PicSlide puzzle game icon">🖼️</div>
+          </div>
+          <div class="game-info">
+            <p class="game-description" itemprop="description">A challenging sliding puzzle game where you arrange image pieces to complete the picture. Features three difficulty levels (2x2, 3x3, 4x4), smart lifeline system, and beautiful drag-and-slide mechanics. Perfect brain training game for puzzle lovers!</p>
+            <div class="game-features">
+              <span class="feature-tag">🎯 Puzzle Game</span>
+              <span class="feature-tag">🧠 Brain Training</span>
+              <span class="feature-tag">📱 Mobile Optimized</span>
+              <span class="feature-tag">🎮 Mind Games</span>
+            </div>
+            <div class="game-actions">
+              <a href="picslide.html" class="btn-primary" aria-label="Learn more about PicSlide puzzle game">Learn More</a>
+              <a href="#" class="btn-secondary" aria-label="Download PicSlide from Play Store">Play Store</a>
+            </div>
+          </div>
+          <meta itemprop="operatingSystem" content="Android">
+          <meta itemprop="applicationCategory" content="Puzzle Game">
+        </article>
+
+        <!-- ChidiyaUdd Game Card -->
+        <article class="game-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+          <div class="game-header">
+            <h3 itemprop="name">🕊️ Chidiya Udd</h3>
+            <span class="game-status">Popular</span>
+          </div>
+          <div class="game-preview">
+            <img src="chidiyaudd_poster.png" alt="ChidiyaUdd reflex game screenshot showing colorful gameplay interface" class="game-image" itemprop="screenshot">
+          </div>
+          <div class="game-info">
+            <p class="game-description" itemprop="description">The ultimate reflex testing game everyone's talking about! Challenge your reaction time in this addictive multiplayer game. Simple tap gameplay with stunning graphics, competitive leaderboards, and family-friendly fun. Test your reflexes now!</p>
+            <div class="game-features">
+              <span class="feature-tag">⚡ Reflex Game</span>
+              <span class="feature-tag">👥 Multiplayer</span>
+              <span class="feature-tag">🏆 Leaderboards</span>
+              <span class="feature-tag">👨‍👩‍👧‍👦 Family Game</span>
+            </div>
+            <div class="game-actions">
+              <a href="chidiyaudd.html" class="btn-primary" aria-label="Learn more about ChidiyaUdd reflex game">Learn More</a>
+              <a href="https://play.google.com/store/apps/details?id=com.chidiyaudd.chidiya_udd" class="btn-secondary" aria-label="Download ChidiyaUdd from Google Play Store">Play Store</a>
+            </div>
+          </div>
+          <meta itemprop="operatingSystem" content="Android">
+          <meta itemprop="applicationCategory" content="Reflex Game">
+          <link itemprop="url" href="https://play.google.com/store/apps/details?id=com.chidiyaudd.chidiya_udd">
+        </article>
+
+      </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="features">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
-      <h2>Exciting Features</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>🕊️ Simple Gameplay</h3>
-          <p>Tap to test your reflexes and beat the challenge.</p>
-        </div>
-        <div class="feature">
-          <h3>🎨 Stunning Graphics</h3>
-          <p>Colorful and vibrant visuals for a delightful experience.</p>
-        </div>
-        <div class="feature">
-          <h3>👨‍👩‍👧‍👦 Multiplayer Mode</h3>
-          <p>Play solo or compete with friends and family.</p>
-        </div>
-        <div class="feature">
-          <h3>🏆 Leaderboards</h3>
-          <p>Rank among the best players and show off your skills.</p>
+      <h2>About ManityaTech Game Studio</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Welcome to ManityaTech Game Studio, an indie mobile game development studio specializing in creating engaging Android games. We focus on puzzle games, brain training apps, reflex games, and casual gaming experiences for players of all ages.</p>
+          <p>Our games combine beautiful user interfaces, challenging gameplay mechanics, and innovative features that keep players coming back for more. We believe in creating high-quality, free-to-play mobile games that provide entertainment and mental stimulation.</p>
+          <div class="tech-stack">
+            <h3>Game Development Technologies:</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Mobile Development</span>
+              <span class="tech-tag">Cross-Platform</span>
+              <span class="tech-tag">Modern UI Frameworks</span>
+              <span class="tech-tag">Git/GitHub</span>
+              <span class="tech-tag">Game Design</span>
+              <span class="tech-tag">Mobile UI/UX</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Video Section -->
-  <section id="video" class="video-section">
-  <div class="container">
-    <h2>See Chidiya Udd in Action</h2>
-    <!-- YouTube Thumbnail with Play Button -->
-    <div class="youtube-video">
-      <a href="https://www.youtube.com/watch?v=C2zNdHlmdN0" target="_blank">
-        <img src="https://img.youtube.com/vi/C2zNdHlmdN0/maxresdefault.jpg" alt="Chidiya Udd Gameplay Video Thumbnail">
-        <div class="play-button"></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
+  <!-- Stats Section -->
+  <section class="stats">
     <div class="container">
-      <h2>What Players Are Saying</h2>
-      <blockquote>"This game is so much fun! It's simple, yet challenging and addictive. Highly recommend!" - ★★★★★</blockquote>
+      <h2>Game Studio Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>2</h3>
+          <p>Published Mobile Games</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Cross-Platform Ready</p>
+        </div>
+        <div class="stat-item">
+          <h3>Free</h3>
+          <p>Game Downloads</p>
+        </div>
+        <div class="stat-item">
+          <h3>Play Store</h3>
+          <p>Available Now</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Interested in collaborating on mobile game development or have questions about our Android games?</p>
+      <div class="contact-links">
+        <a href="https://github.com/jalandra" class="contact-btn" aria-label="Visit our GitHub profile">
+          <span>📧</span> GitHub
+        </a>
+        <a href="mailto:manityatech@gmail.com" class="contact-btn" aria-label="Send us an email">
+          <span>✉️</span> Email
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
-      <p>© 2024 Chidiya Udd. All Rights Reserved.</p>
+      <p>© 2025 ManityaTech Game Studio. All Rights Reserved. | Mobile Game Developer | Android Games | Puzzle & Reflex Games</p>
       <div class="links">
-        <a href="privacy_policy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of use</a>
-        <a href="#">Contact Us</a>
+        <a href="privacy_policy.html" aria-label="Read our privacy policy">Privacy Policy</a>
+        <a href="terms.html" aria-label="Read our terms of use">Terms of Use</a>
       </div>
     </div>
   </footer>

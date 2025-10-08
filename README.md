@@ -1,2 +1,2 @@
-# chidiyaudd_web
-This holds the code for hosting the chidiya udd game
+# Manitya Tech
+This the website for chidiyaUdd
